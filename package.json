@@ -1,0 +1,39 @@
+{
+  "name": "tiny-qrcode-png",
+  "packageManager": "yarn@3.6.0",
+  "author": "Johan Stille",
+  "type": "module",
+  "scripts": {
+    "build": "NODE_ENV=production tsup src/index.ts",
+    "test": "vitest"
+  },
+  "version": "1.0.0",
+  "description": "Generate tiny PNG QR codes",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/withaspoon/tiny-qrcode-png.git"
+  },
+  "volta": {
+    "node": "20.9.0",
+    "yarn": "1.22.17"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "bw-png-writer": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "jsqr": "^1.4.0",
+    "sharp": "^0.32.6",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.2",
+    "vitest": "^0.34.6"
+  }
+}
